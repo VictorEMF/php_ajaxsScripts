@@ -10,6 +10,6 @@
       <a href="#">Verificar Clientes</a>
       <a href="#">Editar Informações</a>
       <a href="#">Editar Status do Pedido</a>
-    </div
+    </div>
   </body>
 </html>
