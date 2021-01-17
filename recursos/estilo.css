@@ -1,0 +1,30 @@
+body{
+  background-color: #bfbfbf;
+}
+
+.menu{
+  padding-bottom: 40px;
+}
+
+.menu > a{
+  color: brown;
+  padding: 10px;
+  position: relative;
+  left: 380px;
+}
+
+.quemsomos{
+  background-color: brown;
+  padding: 4px;
+  border-radius: 16px;
+}
+
+.cliente_bar{
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+}
