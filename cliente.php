@@ -22,6 +22,15 @@ session_start();
       endif;
       unset($_SESSION['status_cadastro']);
        ?>
+
+    <?php
+      if(isset($_SESSION['usuario_embranco'])):
+     ?>
+     <h3>Usuario esta em branco</h3>
+     <?php
+      endif;
+      unset($_SESSION['usuario_embranco']);
+      ?>
     <form action="./backend/cadastro.php" method="post">
       <p> <input type="text" name="cpf" placeholder="CPF: "> </p>
       <p> <input type="text" name="nome" placeholder="Nome: "> </p>
