@@ -5,7 +5,7 @@ function load_page(arquivo){
       data: arquivo,
       url: arquivo,
       success: function(data){
-        $("#conteudo").html(data);
+        $("[name=conteudo] ").html(data);
       }
 
     });
