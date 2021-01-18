@@ -31,6 +31,7 @@ session_start();
       endif;
       unset($_SESSION['usuario_embranco']);
       ?>
+      <strong>Cadastro</strong>
     <form action="./backend/cadastro.php" method="post">
       <p> <input type="text" name="cpf" placeholder="CPF: "> </p>
       <p> <input type="text" name="nome" placeholder="Nome: "> </p>
@@ -40,12 +41,14 @@ session_start();
       <button type="submit">Enviar</button>
     </form>
     <hr>
+    <strong>Login Cliente</strong>
     <form action="./backend/login.php" method="post">
       <p> <input type="text" name="cpf" placeholder="CPF: "> </p>
-      <p> <input type="text" name="senha" placeholder="Senha: "> </p>
+      <p> <input type="password" name="senha" placeholder="Senha: "> </p>
       <button type="submit">Login Cliente</button>
     </form>
     <hr>
+    <strong>Login Funcionario</strong>
     <form action="./backend/loginFun.php" method="post">
       <p> <input type="text" name="cpf" placeholder="CPF: "> </p>
       <p> <input type="password" name="senha" placeholder="Senha: "> </p>
