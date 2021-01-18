@@ -20,7 +20,7 @@ $row = mysqli_num_rows($result);
 
 if($row == 1) {
     $_SESSION['usuario'] = $dados['nome'];
-    header('Location: ../funcionarios.php');
+    header('Location: ../pages/pageFun.php');
 }else {
     $_SESSION['nao_autenticado'] = true;
     header('Location: ../index.php');
