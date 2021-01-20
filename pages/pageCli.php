@@ -1,3 +1,6 @@
+<?php
+session_start();
+include('../backend/verificar_login.php')?>
 <!DOCTYPE html>
 <html lang="pt" dir="ltr">
   <head>
@@ -5,8 +8,9 @@
     <title>Pagina do Cliente</title>
   </head>
   <body>
-    <a href="javascript::" onclick="load_page('Clipd/pedidos.php')">Meus Pedidos</a>
-    <a href="#">Minhas Informações</a>
+    <h3>Bem vindo <?php echo $_SESSION['usuario']; ?></h3>
+    <a href="javascript:" onclick="load_page('Cli/pedidos.php')">Meus Pedidos</a>
+    <a href="javascript:"  onclick="load_page('Cli/info.php')">Minhas Informações</a>
 
   <div name="conteudo">
   </div>
