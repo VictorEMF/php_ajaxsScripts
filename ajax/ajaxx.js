@@ -1,5 +1,5 @@
-function buscar(sexo){
-  let page = 'back.php';
+function buscar(opçoes){
+  let page = '../backend/editarStatus.php';
   $.ajax({
 
     type: 'POST',
@@ -8,13 +8,13 @@ function buscar(sexo){
     beforeSend: function(){
       $("#resposta").html("Carregando");
     },
-    data: {asdgayhkdasfgyukdftgyu: sexo},
+    data: {opçoes: opçoes},
     success: function(msg){
       $("#resposta").html(msg)
     }
   });
 }
 
-$("[name='buscar']").click(function(){
-  buscar($("[name='sexo']").val())
+$("[name='editar']").click(function(){
+  buscar($("[name='opçoes']").val())
 });

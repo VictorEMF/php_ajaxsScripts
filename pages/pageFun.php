@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include('../backend/verificar_login.php')?>
 <!DOCTYPE html>
@@ -10,8 +10,8 @@ include('../backend/verificar_login.php')?>
   <body>
     <h3>Bem vindo <?php echo $_SESSION['usuario']; ?></h3>
     <a href="javascript:" onclick="load_page('Func/infoCli.php')">Ver Informações dos Clientes</a>
-    <a href="javascript:">Editar Pedido dos Clientes</a>
-    <a href="javascript:">Editar Cliente</a>
+    <a href="javascript:" onclick="load_page('Func/editarPedido.php')">Editar Pedido dos Clientes</a>
+    <a href="javascript:">Adicionar Pedido</a>
 
     <div name="conteudo">
 
