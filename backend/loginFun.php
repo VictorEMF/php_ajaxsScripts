@@ -10,7 +10,7 @@ if(empty($_POST['cpf']) or empty($_POST['senha'])) {
 $cpf= mysqli_real_escape_string($conn, $_POST['cpf']);
 $senha= mysqli_real_escape_string($conn, $_POST['senha']);
 
-$query = "SELECT cpf FROM funcionarios WHERE cpf = '{$cpf}' AND senha = '{$senha}'";
+$query = "SELECT * FROM funcionarios WHERE cpf = '{$cpf}' AND senha = '{$senha}'";
 
 $result = mysqli_query($conn, $query);
 
