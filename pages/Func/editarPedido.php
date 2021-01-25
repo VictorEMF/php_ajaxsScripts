@@ -1,16 +1,16 @@
-<form  action="" method="post">
-  <p><strong>CPF do cliente: </strong>
-  <input type="text" name="cpf_cliente" value=""></P>
-  <strong>Status do Pedido:</strong>
-  <select name="opçoes">
-    <option value="Na fila para pintar">Na fila para pintar</option>]
-    <option value="Pintando">Pintando</option>
-    <option value="Finalizado">Finalizado</option>
-  </select>
-  <p><button type="submit" name="editar">Editar</button><p>
-</form>
+<p><strong>CPF do cliente: </strong>
+<input type="text" name="cpf"></P>
+<p><strong>Id do pedido:</strong>
+<input type="number" name="id"></p>
+<strong>Status do Pedido:</strong>
+<select name="opçoes">
+  <option value="Na fila para pintar">Na fila para pintar</option>]
+  <option value="Pintando">Pintando</option>
+  <option value="Finalizado">Finalizado</option>
+</select>
+<p><button type="button" name="submit">Editar</button><p>
 
-<div id="resposta">
+<div name="resposta">
 
 </div>
 

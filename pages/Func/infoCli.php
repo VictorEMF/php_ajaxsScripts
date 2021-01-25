@@ -12,8 +12,8 @@ $qtd = mysqli_num_rows($query);
  <table class="table table-striped table-advance table-hover">
      <tbody>
          <tr>
-             <th><i class="icon_profile"></i> CPF</th>
-             <th><i class="icon_profile"></i> Nome</th>
+             <th><i class="icon_profile"></i>CPF</th>
+             <th><i class="icon_profile"></i>Nome</th>
              <th><i class="icon_mail_alt"></i>Telefone</th>
              <th><i class="icon_mail_alt"></i>Email</th>
          </tr>
